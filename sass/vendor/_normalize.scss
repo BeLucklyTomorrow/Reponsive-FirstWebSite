@@ -2,7 +2,7 @@ html
 {
 	@include font($font-normal);
 	line-height: 1.6;
-	-ms-text-size-adjust:100%;/*unkonw element*/
+	-ms-text-size-adjust:100%;/*设置移动端文本大小*/
 	-webkit-text-size-adjust:100%;
 }
 
