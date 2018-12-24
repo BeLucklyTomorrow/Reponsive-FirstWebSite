@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 .main-nav{
 	background: $accent;
 	position: absolute;
@@ -7,6 +9,14 @@
 	font-size: 1.2rem;
 	overflow: hidden;
 	transition: all ease-in-out 250ms;
+	@media (min-width: 725px) {
+		position: relative;
+		flex: auto;
+		background: none;
+		margin-top: 1em;
+		margin-left: 2em;
+		left:0;
+	}
 }
 
 .main-nav ul{//flexbox playground网站
@@ -15,22 +25,38 @@
 	justify-content: space-around;
 	text-align: center;
 	height: 100vh;
+	@media (min-width: 725px) {
+		flex-direction: row;
+		height: auto;
+	}
 }
 .main-nav li{
 	flex: 1 1 auto;
 	border-bottom: 1px solid rgba(0,0,0,0.15);
 	display: flex;
+	@media (min-width: 725px){
+		border: none;
+		display: inline-block;
+		text-align: right;
+	}
 }
-a{
+.main-nav li a{
 	color: $text-inverse;
 	text-decoration: none;
 	display: flex;
 	flex-basis: 100%;
 	align-items: center;
 	justify-content: center;
+	@media (min-width: 725px) {
+		display: inline;
+	}
 }
-.main-nav li:hover{
+.main-nav li a:hover{
 	background: rgba(0,0,0,0.1);
+	@media (min-width: 725px){
+		background:none;
+		color: darken($text-inverse, 15%);
+	}
 }
 
 .main-nav.is-open{
@@ -47,6 +73,9 @@ a{
 	right: 1em;
 	top: 1em;
 	cursor:pointer;
+	@media (min-width: 725px){
+		display: none;
+	}
 }
 
 .hamburger,.hamburger::before,.hamburger::after{

@@ -3,14 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>My WebSite</title>
+	<title>Conan's Website</title>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="sass/main.css">
 </head>
 <body>
 	<header class="main-header">
 		<div class="container grid">
-			<div class="logo col"><span>My Logo</span></div>
+			<div class="logo col col-2-3"><span>Conan's Logo</span></div>
 			<nav class="main-nav col">
 				<ul class="unstyled-list">
 					<li><a href="">Home</a></li>
@@ -28,14 +28,14 @@
 	<!-- Hero area -->
 	<section class="hero">
 		<div class="container grid">
-			<div class="hero-text">
+			<div class="hero-text col col-2-3">
 				<h1 class="title-large"><span>Take your app to the </span>next level</h1>
 				<p class="text-intro">Codrops has a very nice article on CSS Shapes from Tania Rascia. You might know shape-outside is for redefining the area by which text is floated around that element, allowing for some interesting design opportunities. But there are a couple of genuine CSS</p>
 				<a href="" class="btn btn-secondary">Learn More</a>
 				<a href="" class="btn btn-primary">Get the App</a>
 			</div>
-			<div class="col">
-				<img src="img/hero.jpg" alt="" class="hero-img lg-screen">
+			<div class="col col-1-3">
+				<img src="img/hero.png" alt="" class="hero-img lg-screen">
 			</div>
 
 		</div>
@@ -45,17 +45,17 @@
 	<section class="sales-points">
 		<div class="container grid">
 			<h1 class="col col-full">Promote your app</h1>
-			<div class="sale-point col">
+			<div class="sale-point col col-1-3">
 				<img src="img/sales-responsive.jpg" alt="">
 				<h2>Responsive Desgin</h2>
 				<p>Codrops has a very nice article on CSS Shapes from Tania Rascia. You might know shape-outside is for redefining the area by which text</p>
 			</div>
-			<div class="sale-point col">
+			<div class="sale-point col col-1-3">
 				<img src="img/sales-hand.jpg" alt="">
 				<h2>Easy to Set up</h2>
 				<p>Codrops has a very nice article on CSS Shapes from Tania Rascia. You might know shape-outside is for redefining the area by which text</p>
 			</div>
-			<div class="sale-point col">
+			<div class="sale-point col col-1-3">
 				<img src="img/sales-graph.jpg" alt="">
 				<h2>Great results</h2>
 				<p>Codrops has a very nice article on CSS Shapes from Tania Rascia. You might know shape-outside is for redefining the area by which text</p>
@@ -65,48 +65,50 @@
 
 	<!-- promo section -->
 	<section class="promo">
-		<div class="grid">
+		
 			<div class="title-box">
 				<h1>This app is amazing</h1>
 				<p>It doed everything you didn't know an app needed to do.</p>
 			</div>
-			<div class="col bg-primary">
+		<div class="grid">
+			<div class="col col-1-2 bg-primary">
 				<h1>How to Think Like a Front-End Developer</h1>
 				<h2>A collection of articles along this theme.</h2>
 				<p>Back in 2015, Matt Mullenweg, the co-creator of WordPress, instructed a room full of over a thousand WordPress developers, business owners, end users and designers to "learn JavaScript deeply."A few years later, it makes sense what he meant. WordPress has announced a new editing experience called Gutenberg, which introduces a drag-and-drop interface and is slated to release in version 5.0.</p>
 				<a href="" class="btn btn-primary">Get the App</a>
 			</div>
-			<div class="col img-box lg-screen">
-				<img src="img/1.jpg" alt="A hand a phone">
+			<div class="col col-1-2  img-box lg-screen">
 			</div>
 		</div>
 	</section>
 
 	<!-- CTA -->
 	<section class="cta">
-		<p class="text-intro">Just Starting Out with CSS & HTML</p>
-		<h1 class="title-large">CSS Custom Properties</h1>
-		<a href="" class="btn btn-primary">Get the app</a>
+		<div class="container container-cta">
+			<p class="text-intro">Just Starting Out with CSS & HTML</p>
+			<h1 class="title-large">ShowCase The Greatness Today</h1>
+			<a href="" class="btn btn-primary">Get the app</a>
+		</div>
 	</section>
 
 	<!-- Footer -->
 	<footer>
-		<div class="container">
-			<p>Take your app to the next level</p>
+		<div class="container container-footer">
+			<p class="title-footer">Take your app to the next level</p>
 			<ul class="unstyled-list social-links">
 				<li><a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
 				<li><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
 				<li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 				<li><a href=""><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
 			</ul>
+			<ul class="unstyled-list nav-footer">
+				<li><a href="">Home</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Pricing</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
 		</div>
-		<ul class="unstyled-list nav-footer">
-			<li><a href="">Home</a></li>
-			<li><a href="">About</a></li>
-			<li><a href="">Blog</a></li>
-			<li><a href="">Pricing</a></li>
-			<li><a href="">Contact</a></li>
-		</ul>
 	</footer>
 	<!-- JQuery -->
 	<script

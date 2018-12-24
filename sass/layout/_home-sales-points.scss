@@ -10,3 +10,8 @@
 .sale-point:last-child{
 	margin-bottom: 0;
 }
+@media (min-width: 725px) {
+	.sale-point:first-of-type{
+		margin-top: 0;
+	}
+}
